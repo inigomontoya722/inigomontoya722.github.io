@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/style.css')}}">
+  <title></title>
+</head>
+<body>
+  <div id="toolbar" class="toolbar" width="100%">
+    <button name="ShuffleButton" class="button button_green" onclick="onClickShuffle()">
+      <h1 class="btn-text shuffle">Shuffle</h1>
+      <img src="{{url_for('static', filename='images/btn-shuffle.png')}}" alt="Shuffle" class="btn-icon shuffle">
+      <img src="{{url_for('static', filename='images/btn-shuffle-hover.png')}}" alt="Shuffle" class="btn-icon-hover shuffle">
+    </button>
+    <button name="BubbleSortButton" class="button button_green" onclick="onClickBubbleSort()">
+      <h1 class="btn-text bubble">Bubble Sort</h1>
+      <img src="{{url_for('static', filename='images/btn-bubble.png')}}" alt="Bubble" class="btn-icon bubble">
+      <img src="{{url_for('static', filename='images/btn-bubble-hover.png')}}" alt="Bubble" class="btn-icon-hover bubble">
+    </button>
+    <button name="MergeSortButton" class="button button_green" onclick="onClickMergeSort()">
+      <h1 class="btn-text merge">Merge Sort</h1>
+      <img src="{{url_for('static', filename='images/btn-merge.png')}}" alt="Merge" class="btn-icon merge">
+      <img src="{{url_for('static', filename='images/btn-merge-hover.png')}}" alt="Merge" class="btn-icon-hover merge">
+    </button>
+    <button name="QuickButton" class="button button_green" onclick="onClickQuickSort()">
+      <h1 class="btn-text quick">Quick Sort</h1>
+      <img src="{{url_for('static', filename='images/btn-quick.png')}}" alt="Quick" class="btn-icon quick">
+      <img src="{{url_for('static', filename='images/btn-quick-hover.png')}}" alt="Quick" class="btn-icon-hover quick">
+    </button>
+    <a href="/..">
+      <button name="MenuButton" class="button button_green" >
+        <h1 class="btn-text back">Back</h1>
+        <img src="{{url_for('static', filename='images/btn-back.png')}}" alt="Back" class="btn-icon back">
+        <img src="{{url_for('static', filename='images/btn-back-hover.png')}}" alt="Back" class="btn-icon-hover back">
+      </button>
+    </a>
+  </div>
+  <script src="{{url_for('static', filename='sort.js')}}">
+  </script>
+</body>
+</html>
