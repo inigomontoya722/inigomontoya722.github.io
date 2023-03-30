@@ -1,0 +1,19 @@
+body {
+	margin: 0%;
+	padding: 0%;
+	overflow: overlay;
+}
+
+canvas {
+	margin: 0%;
+	vertical-align: bottom;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #ef008d;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}

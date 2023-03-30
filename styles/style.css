@@ -1,0 +1,117 @@
+body {
+	margin: 0%;
+	padding: 0%;
+	overflow: hidden;
+}
+
+::-webkit-scrollbar {
+	visibility: hidden;
+}
+
+.player {
+	display: none;
+}
+
+.block {
+	display: none;
+}
+
+.solid {
+	display: none;
+}
+
+.toolbar {
+	width: 100%;
+	background-color: #ef008d;
+	align-items: center;
+}
+
+.button {
+  background-color: #ef008d;
+  border: none;
+  color: black;
+  padding: 12px 0px 6px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 5px 1%;
+  width: 17.7%;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button .btn-text {
+	margin: 4px 0px, 0px, 0px;
+	font-size: 30px;
+	font-family: 'Public Pixel', sans-serif;
+}
+
+.button .btn-icon {
+	margin: 0px 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+	visibility: hidden;
+}
+
+.button_green .btn-icon-hover {
+	margin: 0px 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+  	visibility: hidden;
+}
+
+.button_green {
+  background-color: black; 
+  color: black; 
+  border: 2px solid #ef008d;
+}
+
+.button .btn-text {
+	color: #ef008d;
+}
+
+.button_green:hover {
+  background-color: #ef008d;
+}
+
+.button_green:hover .btn-text {
+	color: black;
+}
+
+@media screen and (max-width: 1200px) {
+	.button {
+		width: 17.5%;
+		margin: 5px 1%;
+	}
+	.button .btn-text {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 800px) {
+	.button {
+		width: 17.2%;
+		margin: 5px 1%;
+	}
+	.button .btn-text {
+		font-size: 13px;
+		display: none;
+		visibility: hidden;
+	}
+
+	.button .btn-icon {
+		display: block;
+		visibility: visible;
+	}
+	.button_green:hover .btn-icon {
+		display: none;
+  		visibility: hidden;
+	}
+	.button_green:hover .btn-icon-hover {
+		display: block;
+  		visibility: visible;
+	}
+}
